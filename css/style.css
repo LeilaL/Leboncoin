@@ -1,0 +1,93 @@
+/*$$$$$$$$$$$$$$$$$$$$$HEADER$$$$$$$$$$$$$$$$$$$$*/
+
+header .navbar {
+  height: 69px;
+  background-color: #F56B2A;
+  width: 100%;
+  position: fixed;
+}
+
+ header .btn {
+   background-color: #F56B2A;
+   height: 67px;
+   color: white;
+   border: none;
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+   border-radius: 1px;
+   position: absolute;
+   margin-right: auto;
+ }
+
+header .btn i {
+  margin-right: 7px;
+}
+
+  header .btn:hover {
+    background-color: white;
+    color: #F56B2A;
+  }
+
+header .navbar-default .navbar-nav > li > a, header .navbar-default .navbar-brand {
+  color: white;
+}
+
+header .navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+header .navbar-brand img {
+  width: 140px;
+  height: 40px;
+  margin: auto;
+}
+
+header .navbar-default .navbar-toggle {
+  border-color: white;
+  margin-right: 27px;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: white;
+  color: #F56B2A;
+  font-weight: bold;
+}
+
+
+header .navbar-default .navbar-toggle:hover {
+  color: #3873bd;
+  border-color: #ccc;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$MAIN$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.container {
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+@media (min-width: 600px) {
+  header .btn {
+    float: right;
+}
+
+}
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$ DESKTOP $$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+@media (min-width: 900px) {
+}
