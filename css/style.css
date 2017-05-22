@@ -1,4 +1,5 @@
-/*$$$$$$$$$$$$$$$$$$$$$HEADER$$$$$$$$$$$$$$$$$$$$*/
+
+/*=====================HEADER=========================*/
 
 header .navbar {
   height: 69px;
@@ -59,26 +60,178 @@ header .navbar-default .navbar-toggle:hover {
   border-color: #ccc;
 }
 
-/*$$$$$$$$$$$$$$$$$$$$MAIN$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*=====================MAIN=========================*/
+/*main {
+  background-color: #FAFAFA;
+}*/
 
 .container {
   margin-top: 100px;
 }
 
+.container .row p {
+  font-weight: bold;
+}
+
+strong {
+  color: #F56B2A;
+}
+
+.container .row button {
+  border-radius: 4px;
+  width: 260px;
+  height: 40px;
+  border: 1px solid;
+}
+
+.container .row .annonce {
+  background-color: #4183D7;
+  color: white;
+}
+
+.container .row .annonce:hover {
+  background-color: #4C94EF;
+}
+
+.container .row .recherche {
+  background-color: white;
+  color: #4183D7;
+  margin-top: 15px;
+}
+
+.container .row .recherche:hover {
+  background-color: #D9E6F7;
+}
 
 
+/*==================MAP========================*/
+/*svg g path {
+  fill: #3D6ABE ;
+  fill-opacity: 1;
+  stroke:#1F377F;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}*/
+
+.mapSvgContainer svg{
+  /*margin-top: 50px;*/
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  /*height: 800px;*/
+}
+
+svg g path:hover {
+  fill: #F56B2A;
+}
+
+/*===============LIST REGION==============*/
+.listregion li a {
+  color: #3873bd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.listregion li a:hover {
+  color: #f56b2a;
+}
 
 
+.listregion li {
+  list-style-type: none;
+}
+
+/*=============SELECT===========*/
+#region {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
 
+/*==================FOOTER====================*/
+
+footer {
+  background-color: #474747;
+  color: white;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+footer p {
+  display: inline-flex;
+  word-spacing: 2px;
+}
+
+
+footer .fa-facebook-square {
+  color: #3B5998;
+}
+
+footer .fa-twitter-square {
+  color: #00B0ED;
+}
+
+
+/*=======*/
+/*footer rules*/
+
+.sociaux {
+    display: flex;
+    background-color: #474747;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.leftfooter p {
+    color: white;
+}
+
+.right
+{
+  display: flex;
+}
+
+/*end of footer rules*/
+
+/*start of footer rules*/
+.second
+{
+  background: #474747;
+  height: 40px;
+}
+
+.second p
+{
+  color: white;
+}
+
+/*end of footer rules*/
+/*=============*/
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 @media (min-width: 600px) {
-  header .btn {
-    float: right;
+
+header .btn {
+  display: none;
+}
+
+header .navbar-toggle {
+  display: block;
+}
+
+.navbar-collapse ul {
+  display: none;
+}
+
+.mapSvgContainer svg{
+  width: 60%;
 }
 
 }
@@ -89,5 +242,114 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 $$$$$$$$$$$$$$$$$$ DESKTOP $$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-@media (min-width: 900px) {
+@media (min-width: 972px) {
+
+  /*header .btn {
+    display: inline-flex;
+  }*/
+
+  .navbar-collapse ul {
+  display: contents;
+  position: absolute;
+  }
+
+
+/*==========*/
+/*footer rules*/
+    .whitefoot, .black, .partenaire {
+        display: flex;
+        list-style: none;
+    }
+    .whitefoot ul {
+        width: 24%;
+    }
+    footer ul {
+        list-style: none;
+    }
+    footer a {
+        text-decoration: none;
+    }
+    .whitefoot {
+        background: #f2f2f2;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .black {
+        background: #474747;
+    }
+    footer li {
+        font-size: 13px;
+    }
+    .black li {
+        margin-bottom: 10%;
+    }
+    .whitefoot li a, .whitefoot span {
+        color: #3873bd;
+    }
+    .black li a, .black span {
+        color: white;
+    }
+    .partenaire {
+        background: #474747;
+        margin: 1px 0 1px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .partenaire a {
+        background: #474747;
+        color: white;
+    }
+    .right {
+        display: flex;
+    }
+
+    .right figure
+    {
+      width: 100%;
+    }
+
+    .right p {
+        display: block;
+        color: white;
+    }
+    .right img {
+        margin-right: 15%;
+    }
+
+    .leftannonces button
+    {
+      width: 30%;
+    }
+/*end of footer rules*/
+
+/*footer rules*/
+
+    .whitefoot li :hover
+    {
+      text-decoration: underline;
+    }
+
+    .black li :hover
+    {
+      text-decoration: underline;
+    }
+
+    .partenaire  :hover
+    {
+      text-decoration: underline;
+    }
+
+
+
+    /*end of footer rules*/
+}
+/*==========*/
+}
+
+/*$$$$$$$$$$$$$$ DESKTOP2$$$$$$$$$$$$$$$$$$*/
+
+@media (min-width: 1025px) {
+  .container .listregion {
+    display: block;
+  }
 }
