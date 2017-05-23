@@ -8,26 +8,26 @@ header .navbar {
   position: fixed;
 }
 
- header .btn {
-   background-color: #F56B2A;
-   height: 67px;
-   color: white;
-   border: none;
-   border-left: 1px solid white;
-   border-right: 1px solid white;
-   border-radius: 1px;
-   position: absolute;
-   margin-right: auto;
- }
+header .btn {
+  background-color: #F56B2A;
+  height: 67px;
+  color: white;
+  border: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 1px;
+  position: absolute;
+  margin-right: auto;
+}
 
 header .btn i {
   margin-right: 7px;
 }
 
-  header .btn:hover {
-    background-color: white;
-    color: #F56B2A;
-  }
+header .btn:hover {
+  background-color: white;
+  color: #F56B2A;
+}
 
 header .navbar-default .navbar-nav > li > a, header .navbar-default .navbar-brand {
   color: white;
@@ -62,7 +62,7 @@ header .navbar-default .navbar-toggle:hover {
 
 /*=====================MAIN=========================*/
 /*main {
-  background-color: #FAFAFA;
+background-color: #FAFAFA;
 }*/
 
 .container {
@@ -106,11 +106,11 @@ strong {
 
 /*==================MAP========================*/
 /*svg g path {
-  fill: #3D6ABE ;
-  fill-opacity: 1;
-  stroke:#1F377F;
-  stroke-opacity: 1;
-  stroke-width:0.5;
+fill: #3D6ABE ;
+fill-opacity: 1;
+stroke:#1F377F;
+stroke-opacity: 1;
+stroke-width:0.5;
 }*/
 
 .mapSvgContainer svg{
@@ -175,19 +175,15 @@ footer .fa-twitter-square {
   color: #00B0ED;
 }
 
-
-/*=======*/
-/*footer rules*/
-
 .sociaux {
-    display: flex;
-    background-color: #474747;
-    padding: 2rem;
-    justify-content: space-between;
+  display: flex;
+  background-color: #474747;
+  padding: 2rem;
+  justify-content: space-between;
 }
 
 .leftfooter p {
-    color: white;
+  color: white;
 }
 
 .right
@@ -195,9 +191,6 @@ footer .fa-twitter-square {
   display: flex;
 }
 
-/*end of footer rules*/
-
-/*start of footer rules*/
 .second
 {
   background: #474747;
@@ -209,8 +202,6 @@ footer .fa-twitter-square {
   color: white;
 }
 
-/*end of footer rules*/
-/*=============*/
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
@@ -218,21 +209,21 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 @media (min-width: 600px) {
 
-header .btn {
-  display: none;
-}
+  header .btn {
+    display: none;
+  }
 
-header .navbar-toggle {
-  display: block;
-}
+  header .navbar-toggle {
+    display: block;
+  }
 
-.navbar-collapse ul {
-  display: none;
-}
+  .navbar-collapse ul {
+    display: none;
+  }
 
-.mapSvgContainer svg{
-  width: 60%;
-}
+  .mapSvgContainer svg{
+    width: 45%;
+  }
 
 }
 
@@ -245,105 +236,107 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 @media (min-width: 972px) {
 
   /*header .btn {
-    display: inline-flex;
+  display: inline-flex;
   }*/
 
   .navbar-collapse ul {
-  display: contents;
-  position: absolute;
+    display: contents;
+    position: absolute;
   }
 
 
-/*==========*/
-/*footer rules*/
-    .whitefoot, .black, .partenaire {
-        display: flex;
-        list-style: none;
-    }
-    .whitefoot ul {
-        width: 24%;
-    }
-    footer ul {
-        list-style: none;
-    }
-    footer a {
-        text-decoration: none;
-    }
-    .whitefoot {
-        background: #f2f2f2;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .black {
-        background: #474747;
-    }
-    footer li {
-        font-size: 13px;
-    }
-    .black li {
-        margin-bottom: 10%;
-    }
-    .whitefoot li a, .whitefoot span {
-        color: #3873bd;
-    }
-    .black li a, .black span {
-        color: white;
-    }
-    .partenaire {
-        background: #474747;
-        margin: 1px 0 1px 0;
-        display: flex;
-        justify-content: space-around;
-    }
-    .partenaire a {
-        background: #474747;
-        color: white;
-    }
-    .right {
-        display: flex;
-    }
+  /*==================FOOTER========================*/
 
-    .right figure
-    {
-      width: 100%;
-    }
+  .whitefoot, .black, .partenaire {
+    display: flex;
+    list-style: none;
+  }
+  .whitefoot ul {
+    width: 24%;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  .whitefoot {
+    background: #f2f2f2;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .black {
+    background: #474747;
+  }
+  footer li {
+    font-size: 13px;
+  }
+  .black li {
+    margin-bottom: 10%;
+  }
+  .whitefoot li a, .whitefoot span {
+    color: #3873bd;
+  }
+  .black li a, .black span {
+    color: white;
+  }
+  .partenaire {
+    background: #474747;
+    margin: 1px 0 1px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .partenaire a {
+    background: #474747;
+    color: white;
+  }
+  .right {
+    display: flex;
+  }
 
-    .right p {
-        display: block;
-        color: white;
-    }
-    .right img {
-        margin-right: 15%;
-    }
+  .right figure
+  {
+    width: 100%;
+  }
 
-    .leftannonces button
-    {
-      width: 30%;
-    }
-/*end of footer rules*/
+  .right p {
+    display: block;
+    color: white;
+  }
+  .right img {
+    margin-right: 15%;
+  }
 
-/*footer rules*/
+  .leftannonces button
+  {
+    width: 30%;
+  }
 
-    .whitefoot li :hover
-    {
-      text-decoration: underline;
-    }
+  .whitefoot li :hover
+  {
+    text-decoration: underline;
+  }
 
-    .black li :hover
-    {
-      text-decoration: underline;
-    }
+  .black li :hover
+  {
+    text-decoration: underline;
+  }
 
-    .partenaire  :hover
-    {
-      text-decoration: underline;
-    }
+  .partenaire  :hover
+  {
+    text-decoration: underline;
+  }
 
+  #stores img{
+    width: 100px;
+    height: 70px
+  }
 
+  #countrylist,#countrylist option {
+    color: black;
+    text-decoration: none;
+  }
 
-    /*end of footer rules*/
-}
-/*==========*/
 }
 
 /*$$$$$$$$$$$$$$ DESKTOP2$$$$$$$$$$$$$$$$$$*/
